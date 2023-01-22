@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif
+ }
+
+
+ a{
+    text-decoration: none;
+ }
+ li{
+    list-style: none;
+ }
+
+ 
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:8px;
+    background-color: rgb(199, 223, 233);
+    color:rgb(11, 106, 130);
+}
+.nav-links a{
+    color:rgb(11, 106, 130);
+}
+
+
+.menu{
+    display:flex;
+    gap:3em;
+    font-size: 18px;
+   
+}
+
+.menu li:hover{
+    background-color:  rgb(214, 235, 244);
+    border-radius: 5px;
+    transition:0.3 ease;
+   
+}
+.menu li{
+    padding:5px 14px;
+}
+
+
+.location{
+    position: relative;
+}
+.dropdown{
+    background-color:  rgb(214, 235, 244);
+    padding:1em 0;
+    display:none;
+    position: absolute;
+    border-radius: 8px;
+}
+.dropdown li{
+    padding:0.5em 1em;
+    width:8em;
+    text-align: center;
+}
+.location:hover .dropdown{
+    display: block;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+
+.hamburger{
+    font-size:32px;
+    display:none;
+}
+
+@media (max-width:750px){
+    .hamburger{
+        display:block;
+    }
+
+    .menu{
+        display:none;
+        position:absolute;
+        background-color: rgb(214, 235, 244);
+        left:0;
+        right:0;
+        text-align: center;
+        padding:16px 0;
+    }
+    .menu li:hover{
+        background-color: rgb(214, 235, 244) ;
+        border-radius: 5px;
+        transition:0.3 ease;
+    }
+    .menu li{
+        margin-top:12px;
+    }
+
+    input[type="checkbox"]:checked ~ .menu{
+        display:block;
+    }
+    .dropdown{
+        left:50%;
+        top:30px;
+    }
+}

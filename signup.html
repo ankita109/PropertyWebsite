@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    background-image: url("https://i.pinimg.com/736x/43/33/25/43332535dc660168f2b3046534b6e474.jpg");
+   background-size:cover;
+}
+h1{
+    text-align:center;
+    margin-top:25px;
+    color:rgb(147, 125, 227)
+}
+form{
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:2px;
+    font-weight: bold;
+  
+    
+}
+fieldset{
+    background-color: rgb(121, 162, 232);
+    padding:20px;
+    border-radius: 1.2rem;
+}
+#sign-up{
+    padding:3px;
+    margin-left:140px;
+    color:rgb(8, 89, 181) 
+    
+}
+#sign-up:hover{
+    color:rgb(200, 82, 121)
+}
+
+.inp{
+    padding-left: 115px;
+    padding-right:60px;
+   
+
+}
+
+
+
+    </style>
+    
+</head>
+
+<body>
+  
+    <h1>SIGN UP FORM</h1>
+    <form action=""onSubmit="signUp()">
+        <fieldset>
+            <label for="first-name" class="box" > FIRST NAME
+                <input type="text" class="inp" placeholder="enter your first name" required/>
+            </label><br><br>
+            <label for="last-name"  class="box"> LAST NAME
+                <input type="text" class="inp" placeholder="enter your last name" required/>
+            </label><br><br>
+            <label for="email"  class="box"> EMAIL
+                <input type="email" class="inp" placeholder="enter your email" required/>
+            </label><br><br>
+            <label for="number" class="box"> PHONE 
+                <input type="number" class="inp" placeholder="enter your phone" required/>
+            </label><br><br>
+            <label for="password" class="box"> PASSWORD
+                <input type="password"  class="inp" placeholder="enter your Password" required/>
+            </label><br><br>
+            <label for="password"  class="box">CONFIRM PASSWORD
+                <input type="password" class="inp" placeholder="enter your Password" required/>
+            </label><br><br>
+            <label>
+                <input id="checkbox" type="checkbox" required/><span>I agree to the terms and conditions</span>
+            </label><br><br>
+            <label>
+                <input id="sign-up" type="submit" value="SIGN UP"  />
+
+            </label>
+        </fieldset>
+        
+       
+  
+
+    </form>
+   <script>
+     function signUp(){
+            alert("Thankyou,For signing up");
+        }
+   </script>
+</body>
+
+</html>
