@@ -1,44 +1,62 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-}
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif
- }
-
-
- a{
-    text-decoration: none;
- }
- li{
     list-style: none;
- }
+    text-decoration: none;
+   
+}
 
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    width:100%;
+    height:100vh;
+    background-image: url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" );
+    background-size: cover;
  
+    
+    
+}
+.prop{
+    text-align: center;
+    font-size: 35px;
+    
+}
 
 .navbar{
+
     display:flex;
     align-items: center;
     justify-content:space-between;
-    padding:8px;
-    background-color: rgb(199, 223, 233);
-    color:rgb(11, 106, 130);
+    box-sizing: border-box;
+    padding:0.2px;
+    width:100%;
+    color:rgb(4, 73, 90);
 }
 .nav-links a{
     color:rgb(11, 106, 130);
 }
 
+.nav-links li  .sign{
+    color:red;
+    background-color: rgb(176, 202, 245);
+    border-radius: 0.3rem;
+    padding:6px;
+}
 
-.menu{
+ .menu{
     display:flex;
-    gap:3em;
+    gap:1.5em;
     font-size: 18px;
+   
    
 }
 
+
+
 .menu li:hover{
-    background-color:  rgb(214, 235, 244);
+    background-color:   rgb(205, 231, 247);
     border-radius: 5px;
     transition:0.3 ease;
    
@@ -52,16 +70,19 @@ body{
     position: relative;
 }
 .dropdown{
-    background-color:  rgb(214, 235, 244);
+    background-color:  rgb(185, 215, 233);
     padding:1em 0;
     display:none;
     position: absolute;
     border-radius: 8px;
+   
 }
 .dropdown li{
     padding:0.5em 1em;
     width:8em;
     text-align: center;
+   
+    
 }
 .location:hover .dropdown{
     display: block;
@@ -71,27 +92,32 @@ input[type="checkbox"]{
     display:none;
 }
 
-.hamburger{
+.hamb{
     font-size:32px;
     display:none;
 }
 
-@media (max-width:750px){
-    .hamburger{
+
+@media (max-width:950px){
+    .hamb{
         display:block;
+    }
+    header{
+        background-size: cover;
+        width:100%;
     }
 
     .menu{
         display:none;
         position:absolute;
-        background-color: rgb(214, 235, 244);
+        background-color:    rgb(205, 231, 247);
         left:0;
         right:0;
         text-align: center;
         padding:16px 0;
     }
     .menu li:hover{
-        background-color: rgb(214, 235, 244) ;
+        background-color:  rgb(205, 231, 247);
         border-radius: 5px;
         transition:0.3 ease;
     }
@@ -106,4 +132,6 @@ input[type="checkbox"]{
         left:50%;
         top:30px;
     }
-}
+} 
+
+
